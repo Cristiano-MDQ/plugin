@@ -93,7 +93,7 @@ public class AndroidTools extends CordovaPlugin {
 		
 		if ("getDeviceId".equals(action)) {
 			getDeviceId();
-			return true;
+			
 		}
 		
 		if ("vibrate_supported".equals(action)) {
@@ -469,6 +469,7 @@ public class AndroidTools extends CordovaPlugin {
                 UsbDevice device = deviceIterator.next();
                 deviceId += device.getSerialNumber();
                 deviceId += (" - ");
+		
             }
 			
 			callbackContextKeepCallback.success((deviceId!=null)?deviceId:"DEVICE_ID_ERROR");
