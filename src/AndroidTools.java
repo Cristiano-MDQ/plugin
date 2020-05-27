@@ -92,7 +92,7 @@ public class AndroidTools extends CordovaPlugin {
 	    }
 		
 		if ("getDeviceId".equals(action)) {
-			getDeviceId(args, callbackContext);
+			getDeviceId();
 			return true;
 		}
 		
