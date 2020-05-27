@@ -92,7 +92,8 @@ public class AndroidTools extends CordovaPlugin {
 	    }
 		
 		if ("getDeviceId".equals(action)) {
-			return getDeviceId(args, callbackContext);
+			getDeviceId(args, callbackContext);
+			return true;
 		}
 		
 		if ("vibrate_supported".equals(action)) {
